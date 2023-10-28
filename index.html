@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angel's Portfolio</title>
+    <style>
+      /* we'll work on page styles in the second event in the web dev crash course series */
+      body {
+        background-color: #111111;
+        color: #ffffff;
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <!-- <img alt="Profile Picture" src="./assets/profile-picture-felix.png" /> -->
+      <h1>Angel</h1>
+      <p>Web Application Developer</p>
+      <footer>
+        <!-- add any links you'd like! some icons for different things can be found in the "assets" folder -->
+        <a href="https://linkedin.com/"><img src="./assets/linkedin-in-logo.svg" alt="LinkedIn Page" /></a>
+        <a href="https://instagram.com/"><img src="./assets/instagram-icon.svg" alt="Instagram Profile" /></a>
+        <a href="./assets/resume.png"><img src="./assets/material-document-icon.svg" alt="Resume" /></a>
+        <a href="mailto:me@example.com"><img src="./assets/material-mail-icon.svg" alt="Email Me!" /></a>
+      </footer>
+    </aside>
+
+    <main>
+      <section id="intro">
+        <h2>Hello!</h2>
+        <p>My name is Angel! I am a Computer Science major at the University of Illinois Chicago. I love working with the web and primarily work with Javascript.</p>
+        <p>I am always eager to learn new things and enjoy sharing the knowledge I have with others who want to learn too!</p>
+      </section>
+
+      <section id="project-showcase">
+        <h2>Project Showcase</h2>
+        <p>
+          <a href="https://github.com/gdscuic">gdsc-website</a> <span><img src="./assets/material-star-icon.svg" alt="GitHub Stars" /> 27 stars</span>
+          <span><img src="./assets/material-commit-icon.svg" alt="Repo Commits" /> 43 commits</span>
+        </p>
+        <p>Last commit: feat: added user login system</p>
+        <p>Authors: angel_c, tam_le</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <p><a href="./projects/gdsc-website.html">felix-discord-bot</a> <img src="./assets/javascript.svg" alt="Javascript" /></p>
+        <p>A Discord bot made in Javascript that moderates the GDSC Discord server. Uses Firebase as the backend to link user accounts.</p>
+
+        <p>
+          <a href="./projects/gdsc-website.html">flask-project</a> <img src="./assets/python-icon.svg" alt="Python" /><img
+            src="./assets/javascript.svg"
+            alt="Javascript"
+          />
+        </p>
+        <p>A simple web server done in python that lets people log in and view their account connections.</p>
+      </section>
+    </main>
+  </body>
+</html>
