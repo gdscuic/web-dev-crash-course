@@ -157,3 +157,43 @@ section {
     padding-right: 2rem;
   }
 }
+
+#dicord-event-alert {
+  background-color: #ff3e3e;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#dicord-event-alert p {
+  margin: 0;
+}
+
+#member-list {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+#member-list img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+button {
+  margin-top: 1rem;
+  background-color: #ff3e3e;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+}

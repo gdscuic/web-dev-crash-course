@@ -3,41 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Angel's Portfolio</title>
+    <title>GDSC at UIC Links</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <aside>
-      <img alt="Profile Picture" src="./assets/profile-picture-felix.png" id="profile-picture" />
-      <h1>Angel</h1>
-      <p>Web Application Developer</p>
+      <img alt="Profile Picture" src="./assets/profile-picture.png" id="profile-picture" />
+      <h1>GDSC at UIC</h1>
+      <p>Connect with us online!</p>
       <footer>
         <!-- add any links you'd like! some icons for different things can be found in the "assets" folder -->
         <a href="https://github.com/"><img src="./assets/github-smallmark.svg" alt="GitHub Profile" /></a>
         <a href="https://instagram.com/"><img src="./assets/instagram-icon.svg" alt="Instagram Profile" /></a>
         <a href="https://twitter.com/"><img src="./assets/twitter-logo.svg" alt="Twitter Profile" /></a>
         <a href="https://linkedin.com/"><img src="./assets/linkedin-in-logo.svg" alt="LinkedIn Page" /></a>
-        <a href="./assets/resume.png"><img src="./assets/material-document-icon.svg" alt="Resume" /></a>
-        <a href="mailto:me@example.com"><img src="./assets/material-mail-icon.svg" alt="Email Me!" /></a>
+        <!-- <a href="./assets/resume.png"><img src="./assets/material-document-icon.svg" alt="Resume" /></a>
+        <a href="mailto:me@example.com"><img src="./assets/material-mail-icon.svg" alt="Email Me!" /></a> -->
       </footer>
     </aside>
 
     <main>
       <section id="intro">
-        <h2>Hello!</h2>
-        <p>My name is Angel! I am a Computer Science major at the University of Illinois Chicago. I love working with the web and primarily work with Javascript.</p>
-        <p>I am always eager to learn new things and enjoy sharing the knowledge I have with others who want to learn too!</p>
+        <h2>Welcome!</h2>
+        <p>Google Developer Student Clubs at UIC is a student organization support by Google Developers.</p>
+        <p>We aim to create a learning environment where students can come and grow their experience as a developer, regardless of their year, major, or background.</p>
+        <p>
+          If you're a student interested in gaining more experience outside the classroom to help your career as a developer or programmer, then consider joining GDSC and
+          staying up to date with our events!
+        </p>
+      </section>
+
+      <section id="discord-showcase">
+        <h3>Join our Discord!</h3>
+        <div id="discord-showcase-loading-ui">loading...</div>
+        <div id="discord-showcase-ui" style="opacity: 0" aria-hidden="true">
+          <div id="dicord-event-alert" style="display: block">
+            <p>Looks like there might an event going on right now! There are people currently in the <span id="voice-channel-list">...</span> channel(s).</p>
+          </div>
+          <p>
+            There are currently <span id="online-users">...</span> members online. Join our Discord server here:
+            <a href="https://discord.gg/yf2jwswDSe" target="_blank">https://discord.gg/yf2jwswDSe</a>
+          </p>
+          <div id="member-list"></div>
+        </div>
+        <button id="discord-refresh-button" disabled>Refresh</button>
       </section>
 
       <section id="project-showcase">
         <h2>Project Showcase</h2>
-        <h3 class="link-icon-group">
-          <a href="https://github.com/gdscuic">gdsc-website</a>
-          <span><img src="./assets/material-star-icon.svg" alt="GitHub Stars" /><span>27 stars</span></span>
-          <span><img src="./assets/material-commit-icon.svg" alt="Repo Commits" /> <span>43 commits</span></span>
-        </h3>
-        <p>Last commit: feat: added user login system</p>
-        <p>Authors: angel_c, tam_le</p>
+        <div id="project-showcase-loading-ui">
+          <p>loading...</p>
+        </div>
+        <div id="project-showcase-ui" style="opacity: 0" aria-hidden="true">
+          <h3 class="link-icon-group">
+            <a href="https://github.com/gdscuic/web-dev-crash-course" target="_blank">web-dev-crash-course</a>
+            <span><img src="./assets/material-star-icon.svg" alt="GitHub Stars" /><span id="repo-stars">loading...</span></span>
+            <span><img src="./assets/material-commit-icon.svg" alt="Repo Commits" /> <span id="repo-forks">loading...</span></span>
+          </h3>
+          <p>Last commit: <span id="last-commit-message">loading...</span></p>
+          <p>Author: <span id="commit-authors">loading...</span></p>
+        </div>
+        <button id="github-refresh-button" disabled>Refresh</button>
       </section>
 
       <section id="projects">
@@ -67,5 +93,6 @@
         <p>A tiny terminal project made in C++ that monitors some PC functions.</p>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
