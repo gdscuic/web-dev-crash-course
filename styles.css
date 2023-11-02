@@ -1,0 +1,159 @@
+/* edit these styles to your liking! improve upon it and make it your own */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --padding-x: 4rem;
+  --padding-y: 2rem;
+}
+
+html {
+  font-size: 20px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: #fae3e3;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* our body has 2 elements
+make the first element take a 3rd of the screen
+use flex */
+body {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+/* reset headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #ff3e3e;
+}
+
+body > * {
+  padding: var(--padding-y) var(--padding-x);
+}
+
+aside {
+  min-width: 300px;
+  max-width: 500px;
+  flex-shrink: 1;
+  flex-basis: 33%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  flex-grow: 1;
+  /* do that max-width thing and center it with margin auto */
+  /* max-width: 50%; */
+  /* margin: 0 auto; */
+
+  padding-left: 7rem;
+  padding-right: 7rem;
+
+  overflow: auto;
+}
+
+aside {
+  background-color: #2d2020;
+  color: #fff;
+  border-top-right-radius: 38px;
+  border-bottom-right-radius: 38px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2d2020;
+  color: #fff;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+footer img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.link-icon-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.link-icon-group span > img {
+  vertical-align: text-bottom;
+  margin-right: 0.3rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* media query for min-width: 1200px */
+@media (max-width: 900px) {
+  :root {
+    --padding-x: 3rem;
+    --padding-y: 2rem;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    flex-direction: column;
+    overflow: auto;
+  }
+  aside {
+    /* flex-basis: 100%; */
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 0;
+  }
+
+  main {
+    overflow: initial;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
