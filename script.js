@@ -23,7 +23,7 @@ const commitAuthors = projectShowcaseUi.querySelector("#commit-authors");
 
 // refresh buttons
 const discordRefreshButton = document.getElementById("discord-refresh-button");
-const projectRefreshButton = document.getElementById("project-refresh-button");
+const githubRefreshButton = document.getElementById("github-refresh-button");
 
 function getGitHubRepoData() {
   // https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository
