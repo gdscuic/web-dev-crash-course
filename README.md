@@ -1,7 +1,7 @@
 # web-dev-crash-course
 
 This repo contains the code to follow along with GDSC at UIC's Web Dev Crash Course series.
-You can download it by clicking them green "Code" button and selecting "Download ZIP".
+You can download it by clicking the green "Code" button and selecting "Download ZIP".
 
 Download it and make it your own! Here are some helpful resources to get you started:
 
@@ -11,11 +11,10 @@ Download it and make it your own! Here are some helpful resources to get you sta
 - https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps
 - https://developer.mozilla.org/en-US/docs/Web/CSS
 
-This repo includes completed code up to our CSS event. If you'd like to build out the Javascript portion of the website, we highly suggest following along with us as we built it in the Javascript event. You can find the recording [here](https://gdsc.community.dev/e/mna3wr/).
+This repo includes completed code up to our CSS event. If you'd like to build out the Javascript portion of the website, we highly suggest following along with us as we built it in the Javascript event. You can find the recording [here](https://gdsc.community.dev/e/mna3wr/). We go over what is neccessary to know for the event, but you can find more resources on learning Javascript here:
 
-This is a general walkthrough of Javascript you can follow: https://developer.mozilla.org/en-US/docs/Learn/JavaScript
-
-This guide divides Javascript subjects into more specific topics: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+- This is a general walkthrough of Javascript you can follow: https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+- This guide divides Javascript subjects into more specific topics: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
 
 ## Next steps
 
