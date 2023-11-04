@@ -40,7 +40,6 @@ function getDiscordInviteData() {
   // https://discord.com/developers/docs/resources/invite#get-invite
   // TODO fetch data from discordApiWidgetUrl
   // TODO update discordMemberCountElement with presence_count
-  // TODO figure out how to get voice channel info with people in it
   // TODO add members' profile pictures to discordMemberListElement
 }
 
